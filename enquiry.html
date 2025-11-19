@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-sale=1" />
+    <title>Enquiry - Iconic Homes</title>
+    <meta name="description" content="Send an enquiry to Iconic Homes about services, volunteering or sponsorship." />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1><a href="index.html" class="brand">Iconic<span>Homes</span></a></h1>
+            <nav class="main-nav" aria-label="Main navigation">
+                <button id="navToggle4" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav4">Menu</button>
+                <ul id="primaryNav4" class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="enquiry.html" class="active">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="enquiry-intro">
+            <h2>ProjectEnquiry</h2>
+            <p>Please Use this form to enquire abour our services or volunteering opportunities.</p>
+        </section>
+
+        <section class="form-section">
+            <form id="enquiryForm" onsubmit="return validateEnquiry()">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" type="tel" pattern="[0-9+ ]{7,20}" placeholder="+27 82 000 0000">
+
+
+                <label for="projectType">Project Type</label>
+                <select id="projectType" name="projectType" required>
+                    <option value="">Select a service...</option>
+                    <option>Full Interior Design</option>
+                    <option>Full Home Renovation</option>
+                    <option>Room Refresh</option>
+                    <option>ShowHome Staging</option>
+                    <option>Custom Furniture</option>
+                    <option>3D Rendering</option>
+                    <option>sponsorship/Volunteering</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Submit Enquiry</button>
+            </form>
+            
+            <div id="enquiryRespose" class="form-response" aria-live="polite"></div>
+            <p class="note">We will respond within 2 business days.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div><h4>Iconic Homes</h4><p>Designing interiors in Johannesburg & Pretoria</p></div>
+            <nav aria-label="Footer navigation">
+                <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <div><p>&copy; <span id="year4"></span>est.2025 Iconic Homes</p></div>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

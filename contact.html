@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact | Iconic Homes</title>
+    <meta name="description" content="Contact Iconic Homes - find us in Johannesburg & Pretoria. Use the form to send an email." />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">Iconic <span>Homes</span></a>
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <button id="navToggle5" class="nav-toggle" aria-expanded="false" aria-controls="primaryNav5">Menu</button>
+                <ul id="primaryNav5" class="nav-list">
+
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="contact-intro">
+            <h1>Contact Us</h1>
+            <p>Use the form below to send us a message or use the map to find our offices.</p>
+            <p>Email: iconichomes@gmail.com / sashatizzy@gmail.com </p>
+            <p>Phone: 0839951521</p>
+        </section>
+
+        <section class="contact-grid">
+            <form id="contactForm" onsubmit="return sendEmail()">
+
+                <label for="cname">Name *</label>
+                <input id="cname" type="text" required>
+
+                <label for="cemail">Email *</label>
+                <input id="cemail" type="email" required>
+
+                <label for="ctype">Message type</label>
+                <select id="ctype">
+
+                    <option>General enquiry</option>
+                    <option>Quote request</option>
+                    <option>Feedback</option>
+
+                </select>
+
+                <label for="cmessage">Message *</label>
+                <textarea id="cmessage" rows="6" required></textarea>
+
+                <button class="btn" type="submit">Send Email</button>
+            </form>
+
+            <div class="maps">
+                <h3>Our Locations</h3>
+                <iframe src="https://www.google.com/maps?q=Johannesburg&output=embed" loading="lazy" aria-label="Map showing Johannesburg office"></iframe>
+                <iframe src="https://www.google.com/maps?q=Pretoria&output=embed" loading="lazy" aria-label="Map showing Pretoria office"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+    <div class="container footer-grid">
+        <div><h4>Iconic Homes</h4><p>Designing interiors in Johannesburg & Pretoria</p></div>
+        <nav aria-label="Footer navigation">
+            <ul class="footer-nav">
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div><p>&copy; <span id="year5"></span> Iconic Homes</p></div>
+    </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

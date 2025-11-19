@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-sale=1" />
+    <title>Services - Iconic Homes</title>
+    <meta name="description" content="Explore Iconic Homes services: renovation, 3D rendering, bespoke furniture, and consultations." />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <h1><a href="index.html" class="brand">Iconic<span>Homes</span></a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="service.html" class="active">Services</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content">
+            <h2>Our Services</h2>
+
+            <input type="text" id="searchBox" placeholder="Search Services..." aria-label="Search Services">
+            <ul id="serviceList">
+                <li><strong>Full Interior Design: </strong> Comprehensive design service for your entire home.</li>
+                <li><strong>Room Refresh: </strong>Styling, furniture selection and soft furnishing.</li>
+                <li><strong>ShowHome Staging: </strong> Professional styling to showcase properties for sale.</li>
+                <li>Colour Consultation</li>
+                <li>Furniture Sourcing</li>
+            </ul>
+
+            <h3>Process (high level)</h3>
+            <ul>
+                <li>Initial Consultation</li>
+                <li>Concept & Mood Boards</li>
+                <li>Detailed drawings & Sourcing</li>
+                <li>Implementation & Handover</li>
+            </ul>
+
+            <div class="accordion" aria-hidden="false">
+
+                <button class="accordion-btn" type="button">Full Interior Design</button>
+                <div class="accordion-content">
+                <p>Complete redesign for homes, apartments and commercial spaces — concept, sourcing, and project management.</p>
+            </div>
+
+            <button class="accordion-btn" type="button">Room Refresh</button>
+            <div class="accordion-content">
+                <p>Quick room makeover including colour, furniture and décor to refresh a single space.</p>
+            </div>
+
+            <button class="accordion-btn" type="button">Showhome Staging</button>
+            <div class="accordion-content">
+                <p>Professional styling to present properties for sale.</p>
+            </div>
+        </div>
+
+        <section id="dynamicProjects">
+            <h3>Featured Designs</h3>
+            <div id="projectList" aria-live="polite"></div>
+        </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div><h4>Iconic Homes</h4><p>Designing interiors in Johannesburg & Pretoria</p></div>
+            <nav aria-label="Footer navigation">
+                <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <div><p>&copy; <span id="year3"></span>est.2025 Iconic Homes</p></div>
+    </div>
+    </footer>
+</body>
+</html>
